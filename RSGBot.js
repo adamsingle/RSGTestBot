@@ -8,7 +8,7 @@ var slack = new Slack('https://hooks.slack.com/services/T0532PXTL/B054SQUMP/FmXl
 
 app.use(bodyParser.json());
 
-var server = app.listen(process.ENV.PORT || 10000, function() {
+var server = app.listen(process.env.PORT || 10000, function() {
 	console.log('RSGBot online');
 });
 
